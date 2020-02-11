@@ -8,10 +8,10 @@ def load_library(file)
   
   emoticons.each_pair do |pair|
     meaning = pair[0]            #eg. angel, angry, bored
-    english_emoticon = pair[1][0] #eg. ["O:)"] ["☜(⌒▽⌒)☞"]
-    japanese_emoticon = pair[1][1] #eg. 
-      if !meaning_and_emoticons[:get_meaning][meaning]
-        meaning_and_emoticons[:get_meaning][meaning] = 
+    english_emoticon = pair[1][0] #eg. ["O:)"] 
+    japanese_emoticon = pair[1][1] #eg. ["☜(⌒▽⌒)☞"]
+      if !meaning_and_emoticons[:get_meaning][japanese_emoticon]
+        meaning_and_emoticons[:get_meaning][japanese_emoticon] = meaning
       end
     
   end
