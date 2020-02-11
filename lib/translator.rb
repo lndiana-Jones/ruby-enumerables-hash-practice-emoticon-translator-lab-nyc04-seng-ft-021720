@@ -7,8 +7,8 @@ def load_library(file)
   meaning_and_emoticons[:get_emoticon] = {} #manual creation. Need keys to be English emoticons that point to their meaning
   
   emoticons.each_pair do |pair|
-    meaning = pair[0]            #eg. 
-    emoticon_array = pair[1]
+    meaning = pair[0]            #eg. angel, angry, bored
+    emoticon_array = pair[1]     #eg. 
       if !
     emoticon_array.each do |ele|
       
