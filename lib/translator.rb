@@ -9,7 +9,7 @@ def load_library(file)
   emoticons.each_pair do |pair|
     meaning = pair[0]
     emoticon_array = pair[1]
-    puts emoticon_array
+    p emoticon_array
   end
   
   meaning_and_emoticons
