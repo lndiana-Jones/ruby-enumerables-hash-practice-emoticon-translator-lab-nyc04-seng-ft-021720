@@ -5,7 +5,7 @@ def load_library(file)
   get_meaning = {}
   
   emoticons.each_pair do |pair|
-    puts pair
+    puts pair[0]
   end
   
   
