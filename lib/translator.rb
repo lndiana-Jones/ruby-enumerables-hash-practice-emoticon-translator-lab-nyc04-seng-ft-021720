@@ -8,11 +8,11 @@ def load_library(file)
   
   emoticons.each_pair do |pair|
     meaning = pair[0]            #eg. angel, angry, bored
-    emoticon_array = pair[1]     #eg. 
-      if !
-    emoticon_array.each do |ele|
-      
-    end 
+    english_emoticon = pair[1][0]     #eg. ["O:)", "☜(⌒▽⌒)☞"]
+      if !meaning_and_emoticons[:get_meaning][meaning]
+        meaning_and_emoticons[:get_meaning][meaning] = 
+      end
+    
   end
   
   meaning_and_emoticons
