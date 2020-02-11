@@ -3,8 +3,8 @@ require "yaml"
 def load_library(file)
   emoticons = YAML.load_file(file)
   meaning_and_emoticons = {}
-  meaning_and_emoticons[:get_meaning] = [] #manual creation bc test asks for specific key name
-  meaning_and_emoticons[:get_emoticon] = [] #manual creation bc test asks for specific key name
+  meaning_and_emoticons[:get_meaning] = {} #manual creation. Need keys to be Japanese emoticons
+  meaning_and_emoticons[:get_emoticon] = {}#manual creation. Need keys to be 
   
   emoticons.each_pair do |pair|
     
