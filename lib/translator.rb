@@ -13,6 +13,9 @@ def load_library(file)
       if !meaning_and_emoticons[:get_meaning][japanese_emoticon]
         meaning_and_emoticons[:get_meaning][japanese_emoticon] = meaning
       end
+      if !meaning_and_emoticons[:get_emoticon][english_emoticon]
+        meaning_and_emoticons[:get_emoticon][english_emoticon] = meaning
+      end
     
   end
   
