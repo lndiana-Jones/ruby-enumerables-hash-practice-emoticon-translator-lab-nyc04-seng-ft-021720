@@ -32,7 +32,11 @@ end
 
 def get_english_meaning(file, japanese_emote)
   meaning_and_emoticons = load_library(file)
-  meaning_and_emoticons[:get_meaning][japanese_emote]
+  if !meaning_and_emoticons[:get_meaning][japanese_emote]
+    return "Sorry, that emoticon was not found"
+  else
+    meaning_and_emoticons[:get_meaning][japanese_emote]
+  end 
 end
 
 p load_library('lib/emoticons.yml')
