@@ -23,8 +23,11 @@ end
 
 def get_japanese_emoticon(file, english_emote)
   meaning_and_emoticons = load_library(file) 
-  meaning_and_emoticons[:get_emoticon][english_emote]
-  
+ if !meaning_and_emoticons[:get_emoticon][english_emote]
+   return "Sorry, that emoticon is not in our records."
+ else
+   meaning_and_emoticons[:get_emoticon][english_emote]
+ end 
 end
 
 def get_english_meaning()
