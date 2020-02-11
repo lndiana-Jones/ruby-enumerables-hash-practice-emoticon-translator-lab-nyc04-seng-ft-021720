@@ -39,4 +39,3 @@ def get_english_meaning(file, japanese_emote)
   end 
 end
 
-p load_library('lib/emoticons.yml')
