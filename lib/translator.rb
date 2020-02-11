@@ -4,7 +4,8 @@ def load_library(file)
   emoticons = YAML.load_file(file)
   get_meaning = {}
   
-  emoticons.each do 
+  emoticons.each do |pair|
+    
   
   
 end
