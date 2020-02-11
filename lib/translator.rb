@@ -23,6 +23,7 @@ end
 
 def get_japanese_emoticon(file, english_emote)
   load_library(file)
+  meaning_and_emoticons[:get_emoticon][english_emote]
 end
 
 def get_english_meaning
