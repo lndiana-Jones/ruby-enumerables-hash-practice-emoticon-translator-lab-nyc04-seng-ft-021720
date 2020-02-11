@@ -3,8 +3,8 @@ require "yaml"
 def load_library(file)
   emoticons = YAML.load_file(file)
   meaning_and_emoticons = {}
-  meaning_and_emoticons[:get_meaning] = {} #manual creation. Need keys to be Japanese emoticons that point to their meaning
-  meaning_and_emoticons[:get_emoticon] = {} #manual creation. Need keys to be English emoticons that point to their japanese equivalent
+  meaning_and_emoticons[:get_meaning] = {} #Japanese emoticons => Emoticon meaning
+  meaning_and_emoticons[:get_emoticon] = {} #English emoticon => Japanese emoticon
   
   emoticons.each_pair do |pair|
     meaning = pair[0]            #eg. angel, angry, bored
@@ -18,12 +18,11 @@ def load_library(file)
       end
     
   end
-  
   meaning_and_emoticons
 end
 
-def get_japanese_emoticon
-  # code goes here
+def get_japanese_emoticon(file, english_emote)
+  
 end
 
 def get_english_meaning
