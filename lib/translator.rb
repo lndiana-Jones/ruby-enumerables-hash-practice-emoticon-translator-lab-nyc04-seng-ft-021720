@@ -2,13 +2,13 @@ require "yaml"
 
 def load_library(file)
   emoticons = YAML.load_file(file)
-  get_meaning = {}
+  meaning_and_emoticons = {}
   
   emoticons.each_pair do |pair|
     puts pair[0]
   end
   
-  
+  meaning_and_emoticons
 end
 
 def get_japanese_emoticon
